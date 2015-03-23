@@ -1,0 +1,198 @@
+MAJOR HISTORICAL NAVAL ARMOR PENETRATION FORMULAE© 
+
+by NATHAN OKUN (Revised 11/26/2001)
+
+I. INTRODUCTION 
+
+The following formulae give the thickness "T" of iron or steel armor penetrated with increasing striking velocity "V" at a given impact angle ("obliquity") "Ob" by naval gun projectiles of various diameters "D" and weights "W" in use at the time. The definition of "penetration" varies and usually is either the "Nose Through" or "Through Crack" Ballistic Limit (later called in the U.S. the "Army" Ballistic Limit) or the "Base Through" or "Complete Penetration" or "Perforation" Ballistic Limit (later U.S. terminology was "Navy" Ballistic Limit), though other definitions have been used less often. This is not always clear cut, since, for example, a shattered projectile in many pieces may pass through the plate, but exactly how many pieces will constitute a penetration by these definitions? 
+
+Definitions of various metallurgical, armor, and projectile terms can be found in my document TABLE OF METALLURGICAL PROPERTIES OF NAVAL ARMOR AND CONSTRUCTION MATERIALS. (NOTE: Due to font limitations, the accent marks in words such as the French "GAVRE" and the German "GRUSON" and "HARTE" have been deleted in this HTML-format version of this document.) 
+
+The original penetration formulae format used was, in its most general form 
+
+VL = (K)(C)TtDd/[Ww COSa(Ob)]
+
+where "K" was a constant and "C", if used, was a plate quality factor. Many formulae were for normal impact only or used a separate table/graph to handle oblique impact and had no COSa(Ob) term or sometimes C was combined with the COSa(Ob) term to give a C that varied with obliquity, also dropping the COSa(Ob) term. However, this format does not lend itself to separating the various terms for W, T, D, V, and Ob in an understandable way that explained why the exponents w, t, d, and a had the values that they had. 
+
+To fix this, the penetration formulae are usually given here in the re-arranged form of dimensionless, size-independent penetration in projectile diameters or "calibers" (T/D) on the left-hand side of the equal sign versus a function of all other factors (W, D, V, K, C, and Ob) on the right-hand side, since this makes the effects of each factor more obvious. Also, the units used here are English units of feet/second for V, inches for T and D, and pounds for W. By merely changing the Numerical Constant (= K-(1/t)) found at the beginning of the right-hand side of each formula to the proper value, these formulae can be used in their existing form for any units desired (usually using metric units of meters/second, centimeters, and kilograms). 
+
+Impact obliquity Ob is measured here in degrees such that a right-angles impact on the plate (along the "normal" line to the plate surface at that point) has a value of zero and a tangential impact that just skims the plate before glancing off has an obliquity near 90o. The angle is that of the projectile's direction of motion vector to the plate's normal line, not the direction that the projectile's nose itself is pointing, since the projectile will usually have some yaw (tilt in some sideways direction), though not much if the projectile and gun are designed properly. A yaw can be in any direction and can actually be corkscrewing around the direction of motion vector after a plate impact that wobbles a spinning projectile (most projectiles used spin stabilization, except for cannon balls (round shot) fired by early smooth-bore cannon or modern fin-stabilized super-high-velocity sabotted armor-piercing projectiles (APFSDS) used in post-WWII tank cannon). A small yaw (up to circa 10o) can be merged with the impact obliquity by assuming that it is a shift of the obliquity in the yaw direction by half of the magnitude of the yaw angle from the direction of motion vector. No matter how fixed the other factors are, firing ship motion, target motion, and target design will always make the obliquity of impact very unreliable in any scenario. 
+
+As long as the penetration process is slow compared to the speed of sound in the iron/steel armor and projectile (which is on the order of 16,000 feet/second), the entire kinetic energy of the projectile gets involved with the penetration from beginning to end. Kinetic energy has the formula 
+
+K.E. = (0.5)(W/g)V2
+
+where "g" is the acceleration of gravity (32.2 feet/second/second) when using English pounds, but which is set to 1.00 (ignored) when using metric kilograms, since kilograms already have had this division done ("newtons," not kilograms, are the metric equivalent of English pounds). An alternative form of energy called "Work" is defined as 
+
+Work = FL = (W/g)AL
+
+where "F" is the current force of resistance due to the plate's mass and metallurgical properties over a small thickness slice of length "L" and "A" is the deceleration (in feet/second/second in English units) that the projectile undergoes due to that force. Summing the values of Work for each individual slice L until the total plate thickness T is reached gives the total Work needed to punch through the plate, which will just equal the projectile's available kinetic energy when the projectile is striking the plate at its Navy Ballistic Limit at near normal obliquity (at high obliquity, the projectile is being deflected as well a decelerated and can switch from high-speed ricochet to high-speed penetration without ever slowing to a stop in the middle). 
+
+As mentioned above, if the factors of the penetration are changing rapidly, such as the fracture of the projectile and/or plate as the impact shock moves through them, then the value of W being used to calculate Work in a given length L may not be the total projectile weight and thus the predicted penetration as V, W, D, and Ob vary may not follow a "total-kinetic-energy" rule. In the penetration formulae this results in a smaller exponent for the W/D3 term than the value of one-half of the exponent for the velocity term, which is true for cases where total kinetic energy determines penetration (see below). For example, when dealing with shock-induced failure of the hard face of a face-hardened armor plate (Gruson, Compound, Harvey, and Krupp KC plates introduced in the 1860's to 1890's) the exponent of the weight term in my penetration formula is only 0.2, even though the exponent for the velocity term is 1.21 (6.05 times as large). The reason is that only the metal volume of the front end of the projectile is "informed" by the impact shock wave that the projectile has hit the plate before the plate's face layer caves in and thus only this front volume gets involved in the face penetration, where most of the energy is absorbed, with the rest of the projectile only involved in pushing through the soft back layer afterwards (without the soft back layer, the weight exponent would probably be near zero, once the projectile reached a minimum weight--always less than the weight of all real projectiles). 
+
+The projectiles assumed in these tests are usually between 1 and 3.5 calibers long (ignoring the projectile's windscreen, if any), made out of iron or steel, weigh from 0.148 (cannon balls) to 0.67 (most U.S. WWII naval APC projectiles) times the cube of their diameters (D in inches and W in pounds), have tapered noses that were usually, though not always, either pointed or elliptical in shape, and were consistent for the most part from round to round in their resistance to impact damage under a given set of conditions. 
+
+"W/D3" stays the same for a fixed projectile design of any D. 
+
+In the following formulae, except for the TRESSIDER Wrought Iron Penetration Formula, the entire projectile weight is always used without modification to form the projectile's total kinetic energy that is used in determining penetration. To eliminate any confusing effects of projectile size (absolute scale) on its weight when calculating the size-free T/D value, W/D3 replaces W/g everywhere in the formulae, creating a scale-free or "normalized" kinetic energy (actually, energy density) function "[(W/D3)V2]" that is raised as a unit to a power "k" that is between 0.5 and 1.0, mostly very close to the middle of this range. Any scale effects will be given by a separate explicit multiplier term in the formula involved. 
+
+What does this value of "k" mean? 
+
+If k = 1.0, then the penetration is directly proportional to the Work or kinetic energy available to do the penetrating, which means that each thin armor layer L is resisting by a force F roughly equal for all L layers that sum to the total plate thickness T, but that each L is independent of any other L, much like when one is swimming in water (each volume of water in a swimming pool is the same as any other volume and how big the swimming pool is usually does not matter to how much effort it takes to swim a given distance down the length of the pool). Only when the projectile reaches a given armor slice L need it use up energy to penetrate that slice; ideally, not before and not after. Here, if you quadruple the available energy by doubling the striking velocity, to a first approximation you also quadruple the thickness of armor penetrated. 
+
+If k = 0.5, then the penetration increases slowly where the relationship between penetration achieved and striking velocity is linear--double the striking velocity and you double the penetration. This implies that the thicker plates are more difficult to penetrate than the thinner plates to a far higher degree than merely the ratio of thicknesses would imply. In fact, this value of "k" is true when the entire volume of plate material in front of the projectile is resisting the penetration from the first instant; that is, the material at the back of the plate is involved in the plate's resistance to the penetration of the material at the front of the plate! This occurs under conditions where the plate material is being pushed out the plate back and the material at the plate back is resisting that motion in addition to the resistance from the armor material at the front and middle of the plate--this punching-out is either as a cylindrical or conical plug sheared around the edge of the hole and pushed straight back like a cork from a bottle or as full-plate-thickness triangular flaps or teeth called "petals" in a ring around the forming hole that are being torn open at the center of the impact site and bent outward in all directions around the edge of the hole. If we make the simple assumption that all of the plate material is resisting equally, then adding up the Work required to penetrate the plate of thickness T gives 
+
+Work = Sum of all FL = KTT = KT2
+
+where the sum of all L is T and, as defined, the resistance force F is the sum of the equal forces of resistance of each slice L acting over the entire penetration time instead of only when the projectile reaches that particular slice, which means that the resistance force F is the entire plate thickness (sum of all thicknesses L) times a constant "K" giving the resistance of each slice L. Changing T to T/D to match the normalized kinetic energy format and equating this to the projectile's available normalized kinetic energy gives 
+
+K(T/D)2 = (0.5)(W/D3)V2
+
+or 
+
+T/D = [(0.5/K)(W/D3)]0.5V
+
+as required. For hard materials, this rule may apply for all plate thicknesses, but for ductile, homogeneous armors, it only applies when the plate is rather thin, less than 0.5 calibers at even the most extreme case. 
+
+In real life, neither of these two extremes is usually true, though the linear case is much more nearly approximated for some plate types and/or ranges of thickness, so that the formulae approximations used over the years tended to split the difference when trying to apply a single-exponent "k" power law to all plates. However, only when the plate always fails in exactly the same way no matter how thick it is will this kind of formula be accurate over more than a narrow range of plate thicknesses. Even face-hardened armor, which approximates this single failure mode (always breaking of the face followed by tearing out of the back) better than any other armor type, has a more complex formula that modifies this simple picture, though my face-hardened formulae set is indeed based at bottom on a single-exponent power rule. Homogeneous, ductile armor drastically changes its modes of resistance as plate thickness increases from very thin, trampoline-like sheet metal plates that "dish" (dent) over a wide area ("k" is actually greater than 1.0 here, reducing resistance per unit thickness as thickness increases, because the thicker plates in this range of very low thicknesses are more rigid and absorb less energy per unit volume of armor than the thinnest plates do, which are more flexible and can stretch more before tearing), through medium-thickness petalling plates that fold back in an area ringing the hole ("k" near 0.5), through thick plates that must be bored through like a nail through a thick wood board ("k" near 1.0), petalling only in a narrow thickness region at the plate back. 
+
+Hollow, sharply-pointed windscreens (also called "windshields" or "ballistic caps") and Hoods (thin, soft, soldered-on, form-fitting nose coverings introduced after WWI in many new uncapped, base-fuzed Common projectiles so that the now-universally-used windscreens could have their attachment screw threads cut into them instead of into the projectiles' hard, brittle noses) had only minimal effects except on very thin plate impacts, while thick armor-piercing caps ("AP caps," for short, looking much like very thick Hoods, but later AP caps were usually very highly hardened), when used, had major effects under some conditions, especially when reducing or even entirely preventing projectile nose damage against face-hardened armor. 
+
+Oblique impact was ignored by most of the earlier of these formulae because the projectiles were not very well designed for handling the sideways forces caused by such impacts and had considerable variation in penetration ability from test to test due to projectile deformation and breakage in various unpredictable ways. This problem remained true when attacking face-hardened armor using some of the weaker projectile designs even through the end of WWII, but by then it had mostly been solved by improved projectile designs and metallurgical expertise. 
+
+Oblique impact is rather complex. Below the projectile's "biting" angle (the highest obliquity where nose-first penetration occurs at the Navy Ballistic Limit with this projectile against all thicknesses of the plate type under test), for a given plate type thickness does not significantly affect the percentage increase in striking velocity required to penetrate at a given angle compared to penetrating the same plate at normal (a single multiplier for a given obliquity gives good results for all plate thicknesses where projectile damage is not changing things). The projectile's nose immediately digs into the plate and inhibits ricochet. However, projectiles that impact plates at above their biting angle will have their noses pushed strongly away from the plate, so they will rotate in the direction parallel to the plate face and try to push through the plate sideways, which causes a considerable increase in the required energy to penetrate due to the larger hole needed and the loss of concentrated impact force on the plate at the point of initial impact as the nose skids sideways on the plate surface. Above the biting angle, increasing plate thickness drastically increases the required energy to penetrate until any sideways penetrations are essentially impossible for thick plates. When this occurs for a thick plate, it is necessary to increase the striking velocity even more to the point where a nose-first penetration can be obtained at the Navy Ballistic Limit (similar to below the biting angle, but requiring much more energy to accomplish), but to do this requires that the projectile dig into the plate so deeply on the initial impact that the nose is caught by the mound of armor material pushed up in front of it (no mound can form with face-hardened armor, but the nose can dig into the hard material at the far side of the hole after punching out a plug) and held until the glancing rotation of the projectile ceases when the base hits the plate's surface. The very large increase in striking velocity needed at high obliquity for complete penetration is essentially impossible above about 75-80o even for thin plates when pointed projectiles are used, though brittle plates can have plugs of armor punched out of them by the impact that can cause severe damage by themselves (especially a problem with face-hardened armor). 
+
+At high obliquity, interestingly enough, projectile damage that breaks a projectile (not just bends it, which is always bad) can help penetration, since the ricochet of the nose does not pull the entire projectile away with it and at least some of the lower body of the projectile can sometimes penetrate through the tear made in the plate by the nose before it bounced off. This is especially a problem with face-hardened armor, where a high-obliquity impact can punch out a large plug of armor, resulting in a large elongated hole, even when the projectile itself has no possibility of penetration unless it snaps apart and its lower body can pass through the hole it just made. Unfortunately for the target of such an impact, face-hardened armor is designed to cause such projectile damage on purpose and will thus enhance rather than reduce the damage to the ship compared to the use of ductile, homogeneous armor under such highly oblique impact conditions (as if the punched-out plug of face-hardened armor flying around wasn't bad enough!). 
+
+II. WROUGHT IRON ARMOR 
+
+A. FAIRBAIRN (ENGLISH, CIRCA 1865) 
+
+T/D = (0.0007692)[(W/D3)V2]0.5
+
+Linear increase of T with increasing V nearly correct for thin plates at normal obliquity and/or with projectiles that suffer progressive damage that gradually reduces penetration ability as plate thickness increases (solid wrought-iron round shot, for example). 
+
+B. TRESSIDER (ENGLISH, EARLY 1870'S) 
+
+T/D = (0.00003798)(W/D3)0.5V1.5 = (0.00003798)[(W/D3)V2]0.75/(W/D3)0.25
+
+Increase of T with V is close to average value for medium-thickness plates (0.25-0.75 caliber) at low obliquity with a non-deforming projectile. Note that the power of the weight density function is only one-third the power of the velocity, not one-half as a true total kinetic energy function would require, meaning that increasing the projectile's weight has less effect on its penetration than all other armor penetration formulae given here require. While in agreement with my data on penetrating hard, brittle armor, such as face-hardened armor, though much less extreme (see INTRODUCTION, above), this reduced dependency on projectile weight is not evident in any of my data for penetrating homogeneous, ductile armor with tapered-nose (pointed or rounded) projectiles--flat-nose projectiles punching out armor plugs may also show this reduced dependence on weight under some conditions, especially against thin plates. Perhaps the plates were acting in a brittle manner due to poor quality control (dirt and other impurities in the metal and improper crystal structures that could not move or deform freely), forming cracks at or just after initial impact, prior to the entire projectile getting involved in the impact, or perhaps many of the tests were done with flat-nosed projectiles against thin plates. Lack of a scaling term implies that these effects were for all plate thicknesses against all size projectiles more-or-less identically. 
+
+C. KRUPP WROUGHT IRON (GERMAN, EARLY 1870'S) 
+
+T/D = (0.00004643)[(W/D3)V2]0.75
+
+Similar to Tressider Formula, but total kinetic energy is used. 
+
+D. DE MARRE WROUGHT IRON (FRENCH, LATE 1870'S) 
+
+T/D = (0.00002778)D0.1542[(W/D3)V2]0.7695
+
+A slightly revised version of the Krupp Formula of II.C., above, using the total kinetic energy and having a slightly higher rate of increase in penetration with the striking velocity and/or projectile weight (possibly due to the use of more sharply pointed projectile noses or higher average plate thickness or projectiles that suffer less deformation on impact). Note also the existence of a simple scaling term of the form "Dd" that implies that larger projectiles will more easily pierce plates that are proportionately scaled up in thickness than their otherwise identical smaller scale models of both plate and projectile. Part of this is due to cracking and shearing failure, which occurs on surfaces and thus has a distinct scaling effect compared to the increase in projectile weight (and hence total kinetic energy) with increasing size, but much is probably due at the time to plate quality decreasing as thickness increased. 
+
+E. GAVRE (FRENCH, 1870'S) 
+
+T/D = (0.00002887)D0.42857[(W/D3)V2]0.71429
+
+Similar to the De Marre Wrought Iron Formula in II.D., above, but the rate of increase in penetration with kinetic energy is slightly less (more in line with later results) and the scaling term is of the same form, but considerably higher (in line with some of my face-hardened armor results), which possibly indicates an extreme plate quality drop with increasing thickness at the French Gavre Naval Proving Ground (N.P.G.) at the time. 
+
+III. FACE-HARDENED ARMOR 
+
+A. KRUPP KC VS UNCAPPED AP PROJECTILES (GERMAN, CIRCA 1895) 
+
+T/D = (0.0006659)[(W/D3)V2]0.5
+
+First attempt to describe the penetration into the new deep-faced (35%) Krupp Cemented armor's effects on armor-piercing projectile penetration (KC was introduced by Krupp in 1894). Linear with increasing striking velocity, indicating that projectile damage was progressively worse as plate thickness increased, countering the higher increase rate due to the kinetic energy rise with striking velocity. Used total kinetic energy, which is at odds with my data and with my concept of the theory of face layer penetration due to shock effects. Use of uncapped projectiles caused the test-to-test variation to be considerable, though less than with thin-faced Harveyized armor (introduced in 1891) since the deep face would more thoroughly and consistently destroy the projectile body after the hard surface shattered its nose. 
+
+B. DAVIS HARVEYIZED NICKEL-STEEL VS UNCAPPED AP PROJECTILES (U.S., CIRCA 1895) 
+
+T/D = (0.00003466)D0.3333[(W/D3)V2]0.6667
+
+First attempt to describe face hardened armor penetration as a separate phenomenon from homogeneous armor penetration. Harveyized mild steel and Nickel-steel armors (developed by the U.S. Harvey Steel Company in 1890-91) had a thin "Harveyized" (also called "case hardened," "cemented," or "carburized ") super-hard face layer of only about 1" (2.54cm) thickness with the remainder of the plate remaining slightly hardened, ductile, homogeneous steel. The slightly lower increase in penetration with striking velocity compared to the De Marre Nickel-Steel Formula and huge "Dd" scaling term indicate that these plates were causing less and less damage as their thickness increased, due to the thin constant face layer becoming less and less effective as either projectiles got larger or striking velocity increased against thicker plates. Even with the thin face, plate failure had to be by punching the hard face pieces through the back of the plate, so the use of total kinetic energy is at odds with my understanding of face-hardened armor penetration. The data must have been very scattered from test to test due to the rather low projectile quality against shock, giving widely variable shatter damage effects (a statistical average with a wide range) due to the lack of a deep hardened face behind the cemented layer to consistently pulverize the now nose-less projectile body as it tries to push through the plate. 
+
+C. DAVIS HARVEYIZED NICKEL-STEEL VS CAPPED AP PROJECTILES (U.S., CIRCA 1900) 
+
+T/D = (0.00008582)D0.25[(W/D3)V2]0.625
+
+Similar to the Davis Harveyized Nickel-Steel Vs Uncapped AP Projectiles Formula in III.B., above, but the scaling term is somewhat smaller and the increase in the penetration with striking velocity (V-exponent = (2)(0.625) = 1.25) is almost exactly the same as my own face-hardened armor penetration formula's V-exponent of 1.21, though the use of total kinetic energy by using an exponent of 0.625 for the W/D3 term instead of my formula's much smaller exponent of 0.2 is at odds with my data. However, the thin face would, as described in III.A. and III.B., above, cause less consistent projectile nose and body damage with or without the AP cap, especially with the poor impact shock resistance of these projectiles, and this makes the test results more scattered and hard to define without a good grasp of the theory, which they did not have, either. 
+
+IV. "UNIVERSAL" FORMULAE 
+
+A. DE MARRE NICKEL-STEEL (FRENCH, CIRCA 1890) 
+
+T/D = (0.00005021)D0.07144[(W/D3)(V/C)2Cos3(Ob)]0.71429
+
+The variable "C" is the "De Marre Coefficient" that compares the test results for the given plate to the striking velocity required to barely completely penetrate, using the Navy Ballistic Limit definition, under the same conditions an identical Nickel-steel plate of average French 1890 quality. For example, later Chromium-Nickel-steel armors such as STS had normal-obliquity "C"-values of circa 1.2-1.25. The obliquity range Ob was usually restricted to 30o. As usually used later for other homogeneous armors, the "Cos3(Ob)" term was dropped altogether and "C" was used to define the velocity ratio alone. This formula became the "standard" used for many years from which most others were developed. If the value of "C" is properly chosen, this formula works amazingly well for impacts at a fixed low obliquity using a single constant value for "C" when non-deforming pointed projectiles are used against all kinds of homogeneous ductile iron and steel plates from about 0.1 to 0.75 caliber thick--above 0.75 caliber, the exponent for the kinetic energy term increases from 0.71429 to nearly 1.0, while below 0.1 the exponent increases actually to a value higher than 1.0 (see INTRODUCTION, above). The formula was also applied to face-hardened armor penetration, but value for "C" was restricted to a narrow range of plate thicknesses, requiring a table of "C" values. Note that it has a very small, but significant, scaling term of the "Dd" form that matches homogeneous armor test results reasonably well, which is being caused by the cracking of the armor that occurs with even the best ductile homogeneous iron and steel. 
+
+B. KRUPP ALL-PURPOSE ARMOR PENETRATION (GERMAN, 1930'S) 
+
+T/D = (0.30386)D0.25[(W/D3)(V/C)2]0.625
+
+Note that this is almost exactly the same as the U.S. Davis Harveyized Nickel-Steel Vs Capped AP Projectile Formula of III.C., above, with the addition of the coefficient "C" that acts exactly the same as the De Marre Coefficient of the De Marre Nickel-Steel Formula (even the same letter "C" was used). The value of "C" varied from a minimum of 525 for most Armor-Piercing, Capped (APC) projectiles penetrating unbroken through "mild " steel (post-WWI German "Ste. 42" shipbuilding steel, I assume), through 655-694 for average APC projectiles penetrating unbroken through German Krupp post-1930 "Wotan Harte" (Hardened 'Wotan' armor steel) (Wh) homogeneous (horizontal and thin vertical) armor, to a maximum of 804 for the weakest APC projectiles penetrating unbroken through KC n/A (the last, post-1930 form of Krupp's own "Krupp Cemented" armor, called "New Type"), though the specific projectile used modifies this value considerably in most cases, sometimes, but not always, compensating for the large scaling term that does not apply to most forms of homogeneous, ductile armor and for the use of total kinetic energy for the face-hardened armor computations. See the table at the end of this entry for typical "C" values. (NOTE: If applied, "C" would be 690.6 to give the above Davis Formula's results against rather weak Harveyized Nickel-Steel, which indicates how truly inferior APC projectiles were in 1900.) This formula is for normal obliquity only; oblique impact was handled by a special formula/data table set produced for each projectile separately--Krupp's KC n/A armor oblique angle data set included both a Navy Ballistic Limit (bare penetration entirely through the plate usually by a broken projectile when using Krupp's APC projectile designs) and an estimated "Effective" (i.e., intact) Ballistic Limit where reliable post-impact APC projectile base fuze and filler "as-designed" functioning could be assumed after the projectile had passed through the plate (these two ballistic limits were much closer together at normal than at oblique impact or for thinner armor at any obliquity, with older Krupp--and most other--APC projectile designs having considerably inferior performance when either bare penetration or, more obviously, effective penetration was computed). 
+
+(ACCOMPANYING TABLE BELOW)
+
+. 
+
+TABLE OF "C" VALUES FOR THE KRUPP 1930'S ALL-PURPOSE PENETRATION FORMULA 
+USED IN GERMAN NAVY'S "G.KDOS. 100" (SECRET COMMAND DOCUMENT #100) (OKM, 1940) 
+ENTITLED (ENGLISH TRANSLATION) 
+"BASIS AND GUIDANCE FOR THE CHOICE OF THE OPTIMUM FIGHTING RANGE AND PROJECTILE TYPE" 
+
+. . . . APC PROJECTILE DATA. . . . . . . . . . . . ."C" VALUE USED 
+IDENTIFICATION . . . . . . . . . .DIAM. WEIGHT. . . .Wh. . .KC n/A. .KC n/A. 
+. . . . . . . . . . . . . . . . . (in) . (lb). . .(intact).(broken).(intact) 
+
+GERMAN L/3.7 (NURNBERG, Z Cl.) . .5.91 . 100.3 . . .690 . . .739. . . .780 
+GERMAN L/4.6 (Experimental)* . . .5.91 . 110.2 . . .688** . .618**. . .627 
+FRENCH (LA GALISSONIERE) . . . . .6.00 . 119.0 . . .694 . . .714. . . .781 
+BRITISH (LEANDER)*** . . . . . . .6.00 . 112.0 . . .685 . . .739. . . .780 
+
+GERMAN L/4.4 (HIPPER). . . . . . .8.00 . 269.0 . . .660 . . .637. . . .650 
+FRENCH (ALGERIE) . . . . . . . . .8.00 . 255.7 . . .660 . . .638. . . .652 
+FRENCH (COLBERT) . . . . . . . . .8.00 . 271.2 . . .660 . . .633. . . .650 
+BRITISH (EXETER)**** . . . . . . .8.00 . 249.1 . . .648 . . .628. . . .640 
+
+GERMAN L/3.7 (LUTZOW). . . . . . 11.14 . 661.4 . . .668 . . .762. . . .804 
+GERMAN L/4.4 (SCHARNHORST) . . . 11.14 . 727.5 . . .665 . . .680. . . .704 
+
+FRENCH (OCEAN) . . . . . . . . . 12.00 . 952.4 . . .666 . . .677. . . .685 
+FRENCH (DUNKERQUE) . . . . . . . 12.99 .1212.5 . . .659 . . .678. . . .687 
+FRENCH (LORRAINE). . . . . . . . 13.39 .1221.3 . . .664 . . .676. . . .685 
+
+GERMAN L/4.4 (BISMARCK). . . . . 14.96 .1763.7 . . .658 . . .676. . . .685 
+BRITISH (HOOD) . . . . . . . . . 15.00 .1929.0 . . .663 . . .678. . . .689 
+BRITISH (NELSON) . . . . . . . . 16.00 .2050.3 . . .655 . . .674. . . .687 
+NOTES:
+
+German data on foreign guns was not always correct, as the projectile weights given above show when compared to actual data in modern sources, such as the various battleship books by Dulin and Garzke. The value for "C" with non-German projectiles always assumed a German-type APC projectile with, sometimes, improvements added. 
+
+*This projectile was an elongated, slightly improved Krupp L/4.4 (4.4 calibers long; latest design) APC projectile design. It may never have been actually used by any German ship. It is found in the document "G.Kdos. 144," a booklet of German naval gun penetration tables in 1944, most of which duplicate "G.Kdos. 100." 
+
+**This data not given in "G.Kdos. 144." Estimated from similar Krupp 8" L/4.4 APC projectile data. 
+
+***No British naval 6" APC projectile existed in WWII. Actual projectile type was an uncapped, base-fuzed Common, Pointed, Ballistically Capped (CPBC) design, whose capability against KC n/A armor would be much worse than any design given here, but against Wh at low obliquity, it would probably have a lower, better "C" of perhaps circa 650 due to no AP cap. Penetration ability degrades as Wh plate thickness went above circa half-caliber (i.e., half the projectile's diameter in thickness) even at right-angles. Oblique impact penetration loss against Wh armor over half-caliber was very rapid at obliquity over 45o. 
+
+****No British naval 8" APC projectile existed in WWII. Actual projectile type was a hard-capped Semi-Armor Piercing, Capped (SAPC) design (i.e., base-fuzed Common with an AP Cap), whose capability against any armor would be somewhat worse than most APC projectiles at oblique impact or against plates over circa half-caliber, being perhaps roughly the values given above at right-angles for plates up to half-caliber and then degrading slowly to circa 780 for Wh plates of 1.25 caliber or greater, but more rapidly to circa 800 for KC plates of caliber or greater. Oblique impact penetration loss was very rapid for all plates over circa half-caliber, especially at obliquity over 45o. 
+
+. 
+
+IV. "UNIVERSAL" FORMULAE (Continued) 
+
+C. THOMPSON "F-FORMULA" ALL-PURPOSE ARMOR PENETRATION (U.S., 1930) 
+
+T/D = (1728.04)(W/D3)[(V/F)Cos(Ob)]2
+
+Developed by Dr. L.T.E. Thompson at the U.S. Naval Proving Ground (N.P.G.), Dahlgren, Virginia, from a theoretical application of the basic laws of physics through the "Theory of Similitude'", where calculations would be made and the final units adjusted to agree with the three major Newtonian Physics Conservation Laws (Energy, Linear Momentum, and Angular Momentum). The F-Formula purposely had no form of scaling term and used total kinetic energy. The coefficient "F" was used as a measure of the required armor penetration energy and originally absorbed the effects of all factors including obliquity--the "Cos(Ob)" term was later added to reduce the range of "F" values if only impact obliquity was changed. The formula was usually used in its reverse form 
+
+VL = (0.024056)[(T/D)/(W/D3)]0.5[F/Cos(Ob)] = (0.024056)(D)(T/W)0.5[F/Cos(Ob)]
+
+for the U.S. Navy Ballistic Limit, given as "NBL" or "VL" here. Also, the "F" values calculated from using the formula with known armor plate thicknesses, projectile diameters, impact obliquities, and striking velocities were usually compared directly to each other during analytical work, ignoring the striking velocities altogether. The values for "F" used for comparing all U.S. Navy Ballistic Limits were calculated using an empirical formula for all armor-piercing projectiles derived in 1930 by Dr. Thompson from test results of U.S. Navy Bureau of Ordnance Class "B" homogeneous Chromium-Nickel-steel armor and the similar Bureau of Construction and Repair (Bureau of Ships in WWII) "Special Treatment Steel" (STS) armor and construction material hit by the standard U.S. WWI 260-lb. 8" (20.3cm) Mark 11 Mod 1 soft-capped AP projectile (the first of the "Midvale Unbreakable" designs) at 0-75o obliquity (plotted in BuOrd Ordnance Sketch #78841): 
+
+FSTD = (6)[(T/D) - 0.45][Ob2 + 2000] + 40000
+
+where, as previously mentioned, impact obliquity "Ob" is in degrees with zero meaning a right-angles impact on the plate face. The actual striking velocities in tests were compared in U.S. N.P.G. documents during and just after WWII with the "standard" VL calculated by inserting FSTD into the F-Formula by a velocity-ratio technique termed the "% NBL" where the term "NBL" always meant the FSTD-derived, theoretical Navy Ballistic Limit value and "VL" always was the actual Navy Ballistic Limit value obtained from the tests. For example, if a plate was tested at some obliquity with some projectile that gave an FSTD-calculated NBL of, say, 2000 feet/second but used actual test striking velocities of, say, 1950 and 2150 feet/second and this lead to an estimated 2100 feet/second value for the plate's VL, then the test impacts would be reported to have been at (1950/2000)(100) = 97.5% NBL and (2150/2000)(100) = 107.5% NBL and the estimated VL = (2100/2000)(100) = 105% NBL, slightly better than the FSTD-based NBL value, perhaps due to a more accurate analytical result, to better armor, to an inferior projectile design, or to using the FSTD formula for face-hardened armor, for which it was not designed, but for which it was used anyway at the U.S. N.P.G. to give a standard starting point for comparative purposes. Unfortunately, as mentioned above several times, when physical processes occur so rapidly that the entire projectile and/or impacted plate region are not contributing to the penetration process during at least part of the time due to the speed of sound limit in the metals, the simplified application of the concept of Similitude used in the Thompson F-Formula will give incorrect results (see INTRODUCTION, above). However, if the values of "F" are not restricted to any pre-conceived formula (FSTD is not used), comparison of test-derived "F" values can be quite enlightening because of the simplicity of the plain Thompson F-Formula (only the Numerical Constant 1728.04 has a fixed value and it only exists because of the use of mixed units, such as feet instead of inches when measuring the striking velocity, and so forth). In such a study, the effects of scaling, projectile design, projectile weight changes, and varying methods of plate failure due to composition, toughness, hardness, thickness, and so forth, are all reflected in the values of "F" generated from test results and these "F" values can be used to derive the true laws governing these factors, if one has a open mind and does not try to use pre-conceived ideas to try to force "square pegs into round holes" as was done over and over again in the study of armor and its laws of application. During and after WWII, until the U.S. Navy's armor program was shut down in 1955 and transferred to the U.S. Army, Dr. Allen V. Hershey lead the U.S. N.P.G. armor analysis effort and the tables of "F" values were the center of the formulae and test data sets developed by his department. 
+
+END OF "MAJOR HISTORICAL NAVAL ARMOR PENETRATION FORMULAE"
+
+   		 
